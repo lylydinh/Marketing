@@ -90,8 +90,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bizweb.ico" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\default.min.css" />
+    <Content Include="Content\css\font-awesome.css" />
+    <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\live-chat.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\images\404.jpg" />
     <Content Include="Content\images\background2.png" />
     <Content Include="Content\images\banner\icon-down-g.png" />
@@ -154,19 +161,65 @@
     <Content Include="Content\images\totop.png" />
     <Content Include="Content\images\video-reg-fancybg.png" />
     <Content Include="Content\js\default.js" />
+    <Content Include="Content\swiper3\ans-swiper.css" />
+    <Content Include="Content\swiper3\ans-swiper.js" />
+    <Content Include="Content\swiper3\ans-swiper.min.css" />
+    <Content Include="Content\swiper3\ans-swiper.min.js" />
+    <Content Include="Content\swiper3\css\swiper.css" />
+    <Content Include="Content\swiper3\css\swiper.min.css" />
+    <Content Include="Content\swiper3\demos\01-default.html" />
+    <Content Include="Content\swiper3\demos\02-responsive.html" />
+    <Content Include="Content\swiper3\demos\03-vertical.html" />
+    <Content Include="Content\swiper3\demos\04-space-between.html" />
+    <Content Include="Content\swiper3\demos\05-slides-per-view.html" />
+    <Content Include="Content\swiper3\demos\06-slides-per-view-auto.html" />
+    <Content Include="Content\swiper3\demos\07-centered.html" />
+    <Content Include="Content\swiper3\demos\08-centered-auto.html" />
+    <Content Include="Content\swiper3\demos\09-freemode.html" />
+    <Content Include="Content\swiper3\demos\10-slides-per-column.html" />
+    <Content Include="Content\swiper3\demos\11-nested.html" />
+    <Content Include="Content\swiper3\demos\12-grab-cursor.html" />
+    <Content Include="Content\swiper3\demos\13-scrollbar.html" />
+    <Content Include="Content\swiper3\demos\14-nav-arrows.html" />
+    <Content Include="Content\swiper3\demos\15-infinite-loop.html" />
+    <Content Include="Content\swiper3\demos\16-effect-fade.html" />
+    <Content Include="Content\swiper3\demos\17-effect-cube.html" />
+    <Content Include="Content\swiper3\demos\18-effect-coverflow.html" />
+    <Content Include="Content\swiper3\demos\19-keyboard-control.html" />
+    <Content Include="Content\swiper3\demos\20-mousewheel-control.html" />
+    <Content Include="Content\swiper3\demos\21-autoplay.html" />
+    <Content Include="Content\swiper3\demos\22-dynamic-slides.html" />
+    <Content Include="Content\swiper3\demos\23-thumbs-gallery-loop.html" />
+    <Content Include="Content\swiper3\demos\23-thumbs-gallery.html" />
+    <Content Include="Content\swiper3\demos\24-multiple-swipers.html" />
+    <Content Include="Content\swiper3\demos\25-hash-navigation.html" />
+    <Content Include="Content\swiper3\demos\26-rtl.html" />
+    <Content Include="Content\swiper3\demos\27-jquery.html" />
+    <Content Include="Content\swiper3\demos\28-parallax.html" />
+    <Content Include="Content\swiper3\demos\29-custom-pagination.html" />
+    <Content Include="Content\swiper3\demos\30-lazy-load-images.html" />
+    <Content Include="Content\swiper3\demos\31-custom-plugin.html" />
+    <Content Include="Content\swiper3\demos\32-scroll-container.html" />
+    <Content Include="Content\swiper3\demos\32-slideable-menu.html" />
+    <Content Include="Content\swiper3\demos\33-responsive-breakpoints.html" />
+    <Content Include="Content\swiper3\demos\34-autoheight.html" />
+    <Content Include="Content\swiper3\demos\35-effect-flip.html" />
+    <Content Include="Content\swiper3\demos\36-pagination-fraction.html" />
+    <Content Include="Content\swiper3\demos\37-pagination-progress.html" />
+    <Content Include="Content\swiper3\demos\38-history.html" />
+    <Content Include="Content\swiper3\demos\38-jquery-ie9-loop.html" />
+    <Content Include="Content\swiper3\demos\39-zoom.html" />
+    <Content Include="Content\swiper3\js\swiper.jquery.js" />
+    <Content Include="Content\swiper3\js\swiper.jquery.min.js" />
+    <Content Include="Content\swiper3\js\swiper.jquery.umd.js" />
+    <Content Include="Content\swiper3\js\swiper.jquery.umd.min.js" />
+    <Content Include="Content\swiper3\js\swiper.js" />
+    <Content Include="Content\swiper3\js\swiper.min.js" />
+    <Content Include="Content\swiper3\sample-swiper.css" />
+    <Content Include="Content\swiper3\sample-swiper.min.css" />
+    <Content Include="Content\swiper3\___version.txt" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.eot%40" />
-    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.eot%40v=4.3.0" />
-    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.svg%40v=4.3.0" />
-    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.ttf%40v=4.3.0" />
-    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.woff%40v=4.3.0" />
-    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.woff2%40v=4.3.0" />
-    <Content Include="Content\font-roboto\fonts\Descr.WD3" />
-    <Content Include="Content\font-roboto\fonts\Roboto-Bold.ttf" />
-    <Content Include="Content\font-roboto\fonts\Roboto-Light.ttf" />
-    <Content Include="Content\font-roboto\fonts\Roboto-Medium.ttf" />
-    <Content Include="Content\font-roboto\fonts\Roboto-Regular.ttf" />
     <Content Include="Content\fonts\Roboto-Bold.ttf" />
     <Content Include="Content\fonts\Roboto-Light.ttf" />
     <Content Include="Content\fonts\Roboto-Medium.ttf" />
@@ -177,12 +230,46 @@
     <Content Include="Content\fonts\fontawesome-webfont.ttf%40v=4.3.0" />
     <Content Include="Content\fonts\fontawesome-webfont.woff%40v=4.3.0" />
     <Content Include="Content\fonts\fontawesome-webfont.woff2%40v=4.3.0" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\swiper3\___sample.cshtml" />
+    <Content Include="Content\swiper3\sample-swiper.less" />
+    <Content Include="Content\swiper3\less\zoom.less" />
+    <Content Include="Content\swiper3\less\swiper.less" />
+    <Content Include="Content\swiper3\less\scrollbar.less" />
+    <Content Include="Content\swiper3\less\preloader.less" />
+    <Content Include="Content\swiper3\less\preloader-f7.less" />
+    <Content Include="Content\swiper3\less\navigation.less" />
+    <Content Include="Content\swiper3\less\navigation-f7.less" />
+    <Content Include="Content\swiper3\less\mixins.less" />
+    <Content Include="Content\swiper3\less\effects.less" />
+    <Content Include="Content\swiper3\less\core.less" />
+    <Content Include="Content\swiper3\js\maps\swiper.min.js.map" />
+    <Content Include="Content\swiper3\js\maps\swiper.jquery.umd.min.js.map" />
+    <Content Include="Content\swiper3\js\maps\swiper.jquery.min.js.map" />
+    <Content Include="Content\swiper3\ans-swiper.less" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Icon.png" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery.cookie-1.4.1.min.js" />
     <Content Include="Scripts\jquery.cookie.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\npm.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -199,9 +286,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
