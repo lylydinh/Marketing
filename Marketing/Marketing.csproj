@@ -97,17 +97,29 @@
     <Content Include="Content\images\banner\icon-down-g.png" />
     <Content Include="Content\images\banner\icon-down.png" />
     <Content Include="Content\images\banner\icon-submenu.png" />
+    <Content Include="Content\images\bg-pattern-2.jpg" />
+    <Content Include="Content\images\bg-pattern-3.jpg" />
     <Content Include="Content\images\bg_registration.png" />
     <Content Include="Content\images\bizweb_new_logo_short.png" />
     <Content Include="Content\images\bizweb_old_logo.png" />
     <Content Include="Content\images\bizweb_old_logo_short.png" />
     <Content Include="Content\images\bizweb_price_logo.png" />
     <Content Include="Content\images\bocongthuong.png" />
+    <Content Include="Content\images\cafebiz-logo.png" />
+    <Content Include="Content\images\icon-cup.png" />
     <Content Include="Content\images\icon-home.png" />
     <Content Include="Content\images\icon-popup-close.png" />
     <Content Include="Content\images\icon-submenu.png" />
+    <Content Include="Content\images\icon-toogle-black.png" />
+    <Content Include="Content\images\icon-toogle.png" />
+    <Content Include="Content\images\logo_Dantri_Mau.png" />
+    <Content Include="Content\images\logo_ictnews_mau.png" />
+    <Content Include="Content\images\logo_VietnamPlus_mau.png" />
+    <Content Include="Content\images\logo_vnxpress_mau.png" />
+    <Content Include="Content\images\logo_vtv_mau.png" />
     <Content Include="Content\images\marketing\khuyenmai-thang2-full.png" />
     <Content Include="Content\images\marketing\khuyenmai-thang2-small.png" />
+    <Content Include="Content\images\mpage\close.png" />
     <Content Include="Content\images\newindex\arrow-blue.png" />
     <Content Include="Content\images\newindex\arrow-down-1.png" />
     <Content Include="Content\images\newindex\arrow-down-2.png" />
@@ -146,6 +158,27 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.eot%40" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.eot%40v=4.3.0" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.svg%40v=4.3.0" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.ttf%40v=4.3.0" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.woff%40v=4.3.0" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.woff2%40v=4.3.0" />
+    <Content Include="Content\font-roboto\fonts\Descr.WD3" />
+    <Content Include="Content\font-roboto\fonts\Roboto-Bold.ttf" />
+    <Content Include="Content\font-roboto\fonts\Roboto-Light.ttf" />
+    <Content Include="Content\font-roboto\fonts\Roboto-Medium.ttf" />
+    <Content Include="Content\font-roboto\fonts\Roboto-Regular.ttf" />
+    <Content Include="Content\fonts\Roboto-Bold.ttf" />
+    <Content Include="Content\fonts\Roboto-Light.ttf" />
+    <Content Include="Content\fonts\Roboto-Medium.ttf" />
+    <Content Include="Content\fonts\Roboto-Regular.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot%40" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot%40v=4.3.0" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg%40v=4.3.0" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf%40v=4.3.0" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff%40v=4.3.0" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2%40v=4.3.0" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
