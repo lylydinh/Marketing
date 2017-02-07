@@ -1,0 +1,11 @@
+﻿ 
+    #wrapper {
+        padding-top: 95px;
+    }
+    @media (max-width: 991px)
+    {
+        #wrapper {
+            padding-top: 70px;
+        }
+    }
+ 

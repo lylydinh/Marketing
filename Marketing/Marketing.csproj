@@ -90,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bizweb.ico" />
+    <Content Include="Content\css\add-more.css" />
     <Content Include="Content\css\font-awesome.css" />
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\slide-theme.css" />
