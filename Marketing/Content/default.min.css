@@ -12415,12 +12415,12 @@ body {
 }
 
 .sub-lv2 {
-    background: transparent url("/Themes/Portal/Default/Images/banner/icon-down-g.png") no-repeat scroll right center/13px auto;
+    background: transparent url("images/banner/icon-down-g.png") no-repeat scroll right center/13px auto;
     padding-right: 21px;
 }
 
 .index .sub-lv2 {
-    background: transparent url("/Themes/Portal/Default/Images/banner/icon-down.png") no-repeat scroll right center/13px auto;
+    background: transparent url("images/banner/icon-down.png") no-repeat scroll right center/13px auto;
 }
 
 @media(max-width:991px) and (min-width:768px) {

@@ -6,8 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="shortcut icon" href="~/bizweb.ico" type="image/x-icon" />
-    <link href="~/Content/font-awesome/font-awesome.css" rel="stylesheet" />
-    @*<link href="~/Content/font-awesome/font-awaysome.css" rel="stylesheet" />*@
+    <link href="~/Content/css/font-awesome.css" rel="stylesheet" /> 
     <link href="~/Content/default.min.css" rel="stylesheet" />
     <script src="~/Content/js/default.js"></script>
     <link href="~/Content/css/live-chat.css" rel="stylesheet" />
@@ -30,14 +29,15 @@
     <noscript>
         <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=293334697509343&ev=PageView&noscript=1" />
     </noscript>
-    
+
+    <script src="~/Content/swiper3/js/swiper.js"></script>
 
     
 </head>
 <body>
  
     <div id="container">
-         
+         @Html.Partial("_Header")
     
         <div id="wrapper" class="clearfix">
             @RenderBody()
