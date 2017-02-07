@@ -257,6 +257,17 @@
     <Content Include="Content\fonts\fontawesome-webfont.woff" />
     <Content Include="Content\fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.eot%40" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.eot%40v=4.3.0" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.svg%40v=4.3.0" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.ttf%40v=4.3.0" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.woff%40v=4.3.0" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.woff2%40v=4.3.0" />
+    <Content Include="Content\font-roboto\fonts\Descr.WD3" />
+    <Content Include="Content\font-roboto\fonts\Roboto-Bold.ttf" />
+    <Content Include="Content\font-roboto\fonts\Roboto-Light.ttf" />
+    <Content Include="Content\font-roboto\fonts\Roboto-Medium.ttf" />
+    <Content Include="Content\font-roboto\fonts\Roboto-Regular.ttf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Icon.png" />
     <Content Include="Scripts\bootstrap.js" />
