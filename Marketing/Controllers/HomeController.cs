@@ -17,5 +17,50 @@ namespace Marketing.Controllers
         {
             return View();
         }
+        public ActionResult BangGia()
+        {
+            return View();
+        }
+
+        public ActionResult KenhBanHang()
+        {
+            return View();
+        }
+
+        public ActionResult Blog()
+        {
+            return View();
+        }
+
+        public ActionResult TinhNangNoiBat()
+        {
+            return View();
+        }
+
+        public ActionResult DangNhap()
+        {
+            return View();
+        }
+
+        public ActionResult QuanLyCuaHang()
+        {
+            return View();
+        }
+        public ActionResult TuyChinhGiaoDien()
+        {
+            return View();
+        }
+        public ActionResult MarketingSeo()
+        {
+            return View();
+        }
+        public ActionResult QuanLySanPham()
+        {
+            return View();
+        }
+        public ActionResult BaoMat()
+        {
+            return View();
+        }
     }
 }

@@ -264,6 +264,16 @@
     <Content Include="Content\fonts\fontawesome-webfont.eot" />
     <Content Include="Views\Home\KhoGiaoDien.cshtml" />
     <Content Include="Views\Shared\_Header2.cshtml" />
+    <Content Include="Views\Home\TuyChinhGiaoDien.cshtml" />
+    <Content Include="Views\Home\DangNhap.cshtml" />
+    <Content Include="Views\Home\TinhNangNoiBat.cshtml" />
+    <Content Include="Views\Home\KenhBanHang.cshtml" />
+    <Content Include="Views\Home\BangGia.cshtml" />
+    <Content Include="Views\Home\Blog.cshtml" />
+    <Content Include="Views\Home\QuanLyCuaHang.cshtml" />
+    <Content Include="Views\Home\MarketingSeo.cshtml" />
+    <Content Include="Views\Home\QuanLySanPham.cshtml" />
+    <Content Include="Views\Home\BaoMat.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
