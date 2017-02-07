@@ -156,6 +156,7 @@
     <Content Include="Content\images\search-404.png" />
     <Content Include="Content\images\totop.png" />
     <Content Include="Content\images\video-reg-fancybg.png" />
+    <Content Include="Content\js\add-new-shop.js" />
     <Content Include="Content\js\default.js" />
     <Content Include="Content\swiper3\ans-swiper.css" />
     <Content Include="Content\swiper3\ans-swiper.js" />

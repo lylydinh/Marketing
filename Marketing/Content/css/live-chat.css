@@ -68,3 +68,32 @@
 #livechat-full, #livechat-compact-container, #livechat-eye-catcher {
     right: 20px !important;
 }
+
+
+.advertise-zone {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.advertise-content {
+    position: relative;
+}
+
+    .advertise-content i {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        cursor: pointer;
+        color: #d03317;
+        font-size: 20px;
+    }
+
+        .advertise-content i.active {
+            transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+        }
