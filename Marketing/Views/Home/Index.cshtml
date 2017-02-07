@@ -2,7 +2,10 @@
 @{
     ViewBag.Title = "Index";
 }
-
+@section header
+{
+    @Html.Partial("_Header")
+}
 <div class="home-wrapper">
     <div id="index-banner" class="index-banner has-background">
         <div class="container">
