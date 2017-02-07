@@ -92,6 +92,8 @@
     <Content Include="bizweb.ico" />
     <Content Include="Content\css\font-awesome.css" />
     <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\slide-theme.css" />
+    <Content Include="Content\css\style.min.css" />
     <Content Include="Content\default.min.css" />
     <Content Include="Content\css\live-chat.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
@@ -158,6 +160,7 @@
     <Content Include="Content\images\video-reg-fancybg.png" />
     <Content Include="Content\js\add-new-shop.js" />
     <Content Include="Content\js\default.js" />
+    <Content Include="Content\js\script.js" />
     <Content Include="Content\swiper3\ans-swiper.css" />
     <Content Include="Content\swiper3\ans-swiper.js" />
     <Content Include="Content\swiper3\ans-swiper.min.css" />
@@ -259,6 +262,8 @@
     <Content Include="Content\fonts\fontawesome-webfont.woff" />
     <Content Include="Content\fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Views\Home\KhoGiaoDien.cshtml" />
+    <Content Include="Views\Shared\_Header2.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

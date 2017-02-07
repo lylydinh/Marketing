@@ -13,5 +13,9 @@ namespace Marketing.Controllers
         {
             return View();
         }
+        public ActionResult KhoGiaoDien()
+        {
+            return View();
+        }
     }
 }
