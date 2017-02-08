@@ -11527,7 +11527,7 @@ body {
 }
 
 #index-banner {
-    background: url('/Themes/Portal/Default/Images/bg_top_new.jpg') no-repeat center top;
+    background: url('../Images/bg_top_new.jpg') no-repeat center top;
     background-size: cover;
     color: #fff;
     padding-top: 95px;
@@ -12506,11 +12506,11 @@ body {
 }
 
 .index .sub-lv2 {
-    background: rgba(0,0,0,0) url("/Themes/Portal/Default/Images/icon-down.png") no-repeat scroll right center/13px auto;
+    /*background: rgba(0,0,0,0) url("../Images/icon-down.png") no-repeat scroll right center/13px auto;*/
 }
 
 .index-registration {
-    background: url(/Themes/Portal/Default/Images/background2.png) center center repeat;
+    background: url("../Images/background2.png") center center repeat;
     color: #fff;
     padding: 20px 0 45px 0;
     text-align: center;
@@ -15367,7 +15367,7 @@ a.link-regis {
 }
 
 .index .sub-lv2 {
-    background: rgba(0,0,0,0) url("/Themes/Portal/Default/Images/icon-down.png") no-repeat scroll right center/13px auto;
+    /*background: rgba(0,0,0,0) url("../Images/icon-down.png") no-repeat scroll right center/13px auto;*/
 }
 
 @media(max-width:991px) and (min-width:768px) {

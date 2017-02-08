@@ -3,10 +3,14 @@
     ViewBag.Title = "TinhNangNoiBat";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@section header
+{
+    @Html.Partial("_Header2")
+}
 @section styles
  {
-
-    @*<link href="~/Content/css/add-more.css" rel="stylesheet" />*@
+    <link href="~/Content/css/default.min.vs1.3.3.css" rel="stylesheet" />
+    <link href="~/Content/css/slide-theme.css" rel="stylesheet" />
 }
 
 
@@ -14,7 +18,7 @@
     <div class="container">
         <div class="tool-list-mobile hidden-md hidden-sm hidden-lg invisible-xs">
             <a href="javascript:void(0);" id="btn-toollist">Tính năng nổi bật</a>
-            <div class="tool-list-mobile-nav" id="mob-toollist-content" style="display: none;">
+            <div class="tool-list-mobile-nav" id="mob-toollist-content" @*style="display: none;"*@>
                 <ul class="list-unstyled">
                     <li class="current"><a href="/tinh-nang-noi-bat.html"><span>Tính năng nổi bật</span></a></li>
                     <li class=""><a href="/website-ban-hang-uu-viet.html"><span>Web bán hàng ưu việt</span></a></li>
@@ -23,29 +27,51 @@
                     <li class=""><a href="/marketing-hieu-qua.html"><span>Marketing &amp; SEO</span></a></li>
                     <li class=""><a href="/quan-ly-san-pham.html"><span>Quản lý sản phẩm</span></a></li>
                     <li class=""><a href="/nen-tang-manh-me.html"><span>Mạnh mẽ &amp; Bảo mật</span></a></li>
-
                 </ul>
             </div>
         </div>
-        <script type="text/javascript">
-            $('.tool-list-mobile #btn-toollist').click(function () {
-                $('.tool-list-mobile #mob-toollist-content').slideToggle(200);
-                $(this).toggleClass('active');
-            });
-            $('.tool-list-mobile #mob-toollist-content, .tool-list-mobile #btn-toollist').click(function (e) { e.stopPropagation(); });
-            $(document).click(function () {
-                $('.tool-list-mobile #mob-toollist-content').hide();
-                $('.tool-list-mobile #btn-toollist').removeClass('active');
-            });
-        </script>
+
         <div class="tool-list-content hidden-xs">
             <div id="owl-tool" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
-                <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 2282px; left: 0px; display: block;"><div class="owl-item" style="width: 163px;"><div class="items-tool current"><a href="/tinh-nang-noi-bat.html"><span>Tính năng</span><br>nổi bật</a></div></div><div class="owl-item" style="width: 163px;"><div class="items-tool "><a href="/website-ban-hang-uu-viet.html"><span>Web bán hàng</span><br>ưu việt</a></div></div><div class="owl-item" style="width: 163px;"><div class="items-tool "><a href="/quan-ly-thong-minh.html"><span>Quản lý</span><br>cửa hàng</a></div></div><div class="owl-item" style="width: 163px;"><div class="items-tool "><a href="/tu-chinh-sua-giao-dien.html"><span>Tùy chỉnh</span><br>giao diện</a></div></div><div class="owl-item" style="width: 163px;"><div class="items-tool "><a href="/marketing-hieu-qua.html"><span>Marketing</span><br>&amp; SEO</a></div></div><div class="owl-item" style="width: 163px;"><div class="items-tool "><a href="/quan-ly-san-pham.html"><span>Quản lý</span><br>sản phẩm</a></div></div><div class="owl-item" style="width: 163px;"><div class="items-tool "><a href="/nen-tang-manh-me.html"><span>Mạnh mẽ </span><br>&amp; Bảo mật</a></div></div></div></div>
-
-
-
-
-
+                <div class="owl-wrapper-outer">
+                    <div class="owl-wrapper" style="width: 2282px; left: 0px; display: block;">
+                        <div class="owl-item" style="width: 163px;">
+                            <div class="items-tool current">
+                                <a href="/tinh-nang-noi-bat.html"><span>Tính năng</span><br>nổi bật</a>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 163px;">
+                            <div class="items-tool ">
+                                <a href="/website-ban-hang-uu-viet.html"><span>Web bán hàng</span><br>ưu việt</a>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 163px;">
+                            <div class="items-tool ">
+                                <a href="/quan-ly-thong-minh.html"><span>Quản lý</span><br>cửa hàng</a>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 163px;">
+                            <div class="items-tool ">
+                                <a href="/tu-chinh-sua-giao-dien.html"><span>Tùy chỉnh</span><br>giao diện</a>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 163px;">
+                            <div class="items-tool ">
+                                <a href="/marketing-hieu-qua.html"><span>Marketing</span><br>&amp; SEO</a>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 163px;">
+                            <div class="items-tool ">
+                                <a href="/quan-ly-san-pham.html"><span>Quản lý</span><br>sản phẩm</a>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 163px;">
+                            <div class="items-tool ">
+                                <a href="/nen-tang-manh-me.html"><span>Mạnh mẽ </span><br>&amp; Bảo mật</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
                 <div class="owl-controls clickable" style="display: none;"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div></div></div>
@@ -55,34 +81,7 @@
                 <a class="next"><i class="fa fa-angle-right"></i></a>
             </div>
         </div>
-        <script type="text/javascript">
-            $(function () {
-                var owl = $("#owl-tool");
-                owl.owlCarousel({
-                    items: 7,
-                    itemsDesktop: [1000, 7],
-                    itemsDesktopSmall: [992, 5],
-                    itemsTablet: [768, 5],
-                    itemsMobile: false
-                });
-                $(".next").click(function () {
-                    owl.trigger('owl.next');
-                })
-                $(".prev").click(function () {
-                    owl.trigger('owl.prev');
-                });
-            });
-            $(function () {
-                $(".tool-content .container").addClass('absh').animate({ opacity: 0.0, left: '-100px' }, 100, function () {
-                    $(this).delay(50);
-                    $(".tool-content .container").addClass('absh').animate({
-                        opacity: 1.0, left: '0'
-                    }, 500, function () {
-                        $(this).delay(10).removeClass('absh');
-                    });
-                });
-            });
-        </script>
+
     </div>
 </section>
 
@@ -95,7 +94,7 @@
         <div class="tool-content-info tool-page-3">
             <div class="row info">
                 <div class="col-md-6 pull-right">
-                    <div class="info-img"><img src="/Themes/Portal/Default/Images/func/tab3-1.jpg" class="img-responsive"></div>
+                    <div class="info-img"><img src="~/Content/images/func/tab3-1.jpg" class="img-responsive"></div>
                 </div>
                 <div class="col-md-6 pull-left">
                     <div class="content-info">
@@ -107,7 +106,7 @@
             </div>
             <div class="row info">
                 <div class="col-md-6">
-                    <div class="info-img"><img src="/Themes/Portal/Default/Images/func/tab3-2.jpg" class="img-responsive"></div>
+                    <div class="info-img"><img src="~/Content/images/func/tab3-2.jpg" class="img-responsive"></div>
                 </div>
                 <div class="col-md-6">
                     <div class="content-info">
@@ -120,7 +119,7 @@
             </div>
             <div class="row info">
                 <div class="col-md-6 pull-right">
-                    <div class="info-img"><img src="/Themes/Portal/Default/Images/func/tab3-3.jpg" class="img-responsive"></div>
+                    <div class="info-img"><img src="~/Content/images/func/tab3-3.jpg" class="img-responsive"></div>
                 </div>
                 <div class="col-md-6 pull-left">
                     <div class="content-info">
@@ -133,7 +132,7 @@
             </div>
             <div class="row info">
                 <div class="col-md-6">
-                    <div class="info-img"><img src="/Themes/Portal/Default/Images/func/tab3-4.jpg" class="img-responsive"></div>
+                    <div class="info-img"><img src="~/Content/images/func/tab3-4.jpg" class="img-responsive"></div>
                 </div>
                 <div class="col-md-6">
                     <div class="content-info">
@@ -145,7 +144,7 @@
             </div>
             <div class="row info">
                 <div class="col-md-6 pull-right">
-                    <div class="info-img"><img src="/Themes/Portal/Default/Images/func/tab3-5.jpg" class="img-responsive"></div>
+                    <div class="info-img"><img src="~/Content/images/func/tab3-5.jpg" class="img-responsive"></div>
                 </div>
                 <div class="col-md-6 pull-left">
                     <div class="content-info">
@@ -157,7 +156,7 @@
             </div>
             <div class="row info">
                 <div class="col-md-6">
-                    <div class="info-img"><img src="/Themes/Portal/Default/Images/func/tab3-6.jpg" class="img-responsive"></div>
+                    <div class="info-img"><img src="~/Content/images/func/tab3-6.jpg" class="img-responsive"></div>
                 </div>
                 <div class="col-md-6">
                     <div class="content-info">
@@ -179,9 +178,51 @@
             </span>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-            <input style="font-weight : 300;" id="site_name_bottom" class="input-site-name hidden-xs" type="text" value="" placeholder="Nhập tên cửa hàng/doanh nghiệp của bạn" onkeypress="return onInputStoreName(event, this)">
+            <input style="font-weight: 300;" id="site_name_bottom" class="input-site-name hidden-xs" type="text" value="" placeholder="Nhập tên cửa hàng/doanh nghiệp của bạn" onkeypress="return onInputStoreName(event, this)">
             <a class="btn-registration banner-home-registration event-Bizweb-Free-Trial-form-open" onclick="openCreateStorePopup(this);" href="javascript:;">Dùng thử miễn phí</a>
         </div>
     </div>
 </div>
+
+@section scripts{
+    <script type="text/javascript">
+        $('.tool-list-mobile #btn-toollist').click(function () {
+            $('.tool-list-mobile #mob-toollist-content').slideToggle(200);
+            $(this).toggleClass('active');
+        });
+        $('.tool-list-mobile #mob-toollist-content, .tool-list-mobile #btn-toollist').click(function (e) { e.stopPropagation(); });
+        $(document).click(function () {
+            $('.tool-list-mobile #mob-toollist-content').hide();
+            $('.tool-list-mobile #btn-toollist').removeClass('active');
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            var owl = $("#owl-tool");
+            owl.owlCarousel({
+                items: 7,
+                itemsDesktop: [1000, 7],
+                itemsDesktopSmall: [992, 5],
+                itemsTablet: [768, 5],
+                itemsMobile: false
+            });
+            $(".next").click(function () {
+                owl.trigger('owl.next');
+            })
+            $(".prev").click(function () {
+                owl.trigger('owl.prev');
+            });
+        });
+        $(function () {
+            $(".tool-content .container").addClass('absh').animate({ opacity: 0.0, left: '-100px' }, 100, function () {
+                $(this).delay(50);
+                $(".tool-content .container").addClass('absh').animate({
+                    opacity: 1.0, left: '0'
+                }, 500, function () {
+                    $(this).delay(10).removeClass('absh');
+                });
+            });
+        });
+    </script>
+}
 

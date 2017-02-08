@@ -98,6 +98,7 @@
     <Content Include="Content\css\style.min.css" />
     <Content Include="Content\default.min.css" />
     <Content Include="Content\css\live-chat.css" />
+    <Content Include="Content\font-awesome\css\font-awesome.min.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\images\404.jpg" />
     <Content Include="Content\images\aboutus\bg-about-us-banner.jpg" />
@@ -277,6 +278,10 @@
     <Content Include="Content\images\func\tab3-4.jpg" />
     <Content Include="Content\images\func\tab3-5.jpg" />
     <Content Include="Content\images\func\tab3-6.jpg" />
+    <Content Include="Content\images\func\tab4-1.jpg" />
+    <Content Include="Content\images\func\tab4-2.jpg" />
+    <Content Include="Content\images\func\tab4-3.jpg" />
+    <Content Include="Content\images\func\tab4-4.jpg" />
     <Content Include="Content\images\icon-arrow.png" />
     <Content Include="Content\images\icon-clock.png" />
     <Content Include="Content\images\icon-cup.png" />
@@ -809,6 +814,12 @@
     <Content Include="Content\images\favicon.ico%40v1" />
     <Content Include="Content\images\newindex\bw-feedback-bg.png%40v=5" />
     <Content Include="Content\images\affiliate\promote-img.png%40v=100" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.eot%40" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.eot%40v=4.3.0" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.svg%40v=4.3.0" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.ttf%40v=4.3.0" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.woff%40v=4.3.0" />
+    <Content Include="Content\font-awesome\fonts\fontawesome-webfont.woff2%40v=4.3.0" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
