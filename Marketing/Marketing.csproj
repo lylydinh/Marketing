@@ -282,6 +282,16 @@
     <Content Include="Content\images\func\tab4-2.jpg" />
     <Content Include="Content\images\func\tab4-3.jpg" />
     <Content Include="Content\images\func\tab4-4.jpg" />
+    <Content Include="Content\images\func\tab6-1.jpg" />
+    <Content Include="Content\images\func\tab6-2.jpg" />
+    <Content Include="Content\images\func\tab6-3.jpg" />
+    <Content Include="Content\images\func\tab6-4.jpg" />
+    <Content Include="Content\images\func\tab7-1.jpg" />
+    <Content Include="Content\images\func\tab7-2.jpg" />
+    <Content Include="Content\images\func\tab7-3.jpg" />
+    <Content Include="Content\images\func\tab7-4.jpg" />
+    <Content Include="Content\images\func\tab7-5.jpg" />
+    <Content Include="Content\images\func\tab7-6.jpg" />
     <Content Include="Content\images\icon-arrow.png" />
     <Content Include="Content\images\icon-clock.png" />
     <Content Include="Content\images\icon-cup.png" />
@@ -820,6 +830,7 @@
     <Content Include="Content\font-awesome\fonts\fontawesome-webfont.ttf%40v=4.3.0" />
     <Content Include="Content\font-awesome\fonts\fontawesome-webfont.woff%40v=4.3.0" />
     <Content Include="Content\font-awesome\fonts\fontawesome-webfont.woff2%40v=4.3.0" />
+    <Content Include="Views\Home\BanHangUuViet.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

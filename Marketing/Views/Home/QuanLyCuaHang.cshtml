@@ -19,28 +19,18 @@
             <a href="javascript:void(0);" id="btn-toollist">Tính năng nổi bật</a>
             <div class="tool-list-mobile-nav" id="mob-toollist-content" style="display: none;">
                 <ul class="list-unstyled">
-                    <li class=""><a href="/tinh-nang-noi-bat.html"><span>Tính năng nổi bật</span></a></li>
-                    <li class=""><a href="/website-ban-hang-uu-viet.html"><span>Web bán hàng ưu việt</span></a></li>
-                    <li class="current"><a href="/quan-ly-thong-minh.html"><span>Quản lý cửa hàng</span></a></li>
-                    <li class=""><a href="/tu-chinh-sua-giao-dien.html"><span>Tùy chỉnh giao diện</span></a></li>
-                    <li class=""><a href="/marketing-hieu-qua.html"><span>Marketing &amp; SEO</span></a></li>
+                    <li class=""><a href="@Url.Action("TinhNangNoiBat","Home")"><span>Tính năng nổi bật</span></a></li>
+                    <li class=""><a href="@Url.Action("TinhNangNoiBat","Home")"><span>Web bán hàng ưu việt</span></a></li>
+                    <li class="current"><a href="@Url.Action("TinhNangNoiBat","Home")"><span>Quản lý cửa hàng</span></a></li>
+                    <li class=""><a href="@Url.Action("TuyChinhGiaoDien","Home")"><span>Tùy chỉnh giao diện</span></a></li>
+                    <li class=""><a href="@Url.Action("MarketingSeo","Home")"><span>Marketing &amp; SEO</span></a></li>
                     <li class=""><a href="/quan-ly-san-pham.html"><span>Quản lý sản phẩm</span></a></li>
                     <li class=""><a href="/nen-tang-manh-me.html"><span>Mạnh mẽ &amp; Bảo mật</span></a></li>
 
                 </ul>
             </div>
         </div>
-        <script type="text/javascript">
-            $('.tool-list-mobile #btn-toollist').click(function () {
-                $('.tool-list-mobile #mob-toollist-content').slideToggle(200);
-                $(this).toggleClass('active');
-            });
-            $('.tool-list-mobile #mob-toollist-content, .tool-list-mobile #btn-toollist').click(function (e) { e.stopPropagation(); });
-            $(document).click(function () {
-                $('.tool-list-mobile #mob-toollist-content').hide();
-                $('.tool-list-mobile #btn-toollist').removeClass('active');
-            });
-        </script>
+
         <div class="tool-list-content hidden-xs">
             <div id="owl-tool" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
                 <div class="owl-wrapper-outer">
@@ -48,77 +38,55 @@
                                                                                                                                                                                                                                              display: block;">
                         <div class="owl-item" style="width: 163px;">
                             <div class="items-tool ">
-                                <a href="/tinh-nang-noi-bat.html"><span>Tính năng</span><br>nổi bật</a>
+                                <a href="@Url.Action("TinhNangNoiBat","Home")"><span>Tính năng</span><br>nổi bật</a>
                             </div>
                         </div>
                         <div class="owl-item" style="width: 163px;">
-                            <div class="items-tool "><a href="/website-ban-hang-uu-viet.html"><span>Web bán hàng</span><br>ưu việt</a>
+                            <div class="items-tool ">
+                                <a href="@Url.Action("TinhNangNoiBat","Home")"><span>Web bán hàng</span><br>ưu việt</a>
                             </div>
                         </div>
                         <div class="owl-item" style="width: 163px;">
-                            <div class="items-tool current"><a href="/quan-ly-thong-minh.html"><span>Quản lý</span><br>cửa hàng</a>
+                            <div class="items-tool current">
+                                <a href="@Url.Action("TinhNangNoiBat","Home")"><span>Quản lý</span><br>cửa hàng</a>
                             </div>
                         </div>
                         <div class="owl-item" style="width: 163px;">
-                            <div class="items-tool "><a href="/tu-chinh-sua-giao-dien.html"><span>Tùy chỉnh</span><br>giao diện</a>
+                            <div class="items-tool ">
+                                <a href="@Url.Action("TuyChinhGiaoDien","Home")"><span>Tùy chỉnh</span><br>giao diện</a>
                             </div>
                         </div>
                         <div class="owl-item" style="width: 163px;">
-                            <div class="items-tool "><a href="/marketing-hieu-qua.html"><span>Marketing</span><br>&amp; SEO</a>
+                            <div class="items-tool ">
+                                <a href="@Url.Action("MarketingSeo","Home")"><span>Marketing</span><br>&amp; SEO</a>
                             </div>
                         </div>
                         <div class="owl-item" style="width: 163px;">
-                            <div class="items-tool "><a href="/quan-ly-san-pham.html"><span>Quản lý</span><br>sản phẩm</a>
+                            <div class="items-tool ">
+                                <a href="/quan-ly-san-pham.html"><span>Quản lý</span><br>sản phẩm</a>
                             </div>
                         </div>
                         <div class="owl-item" style="width: 163px;">
-                            <div class="items-tool "><a href="/nen-tang-manh-me.html"><span>Mạnh mẽ </span><br>&amp; Bảo mật</a>
+                            <div class="items-tool ">
+                                <a href="/nen-tang-manh-me.html"><span>Mạnh mẽ </span><br>&amp; Bảo mật</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
 
-
-
-
-
-
-                <div class="owl-controls clickable" style="display: none;"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div></div></div>
+                <div class="owl-controls clickable" style="display: none;"> 
+                    <div class="owl-pagination">
+                        <div class="owl-page active"><span class=""></span></div>
+                    </div>
+                </div>
             </div>
             <div class="customNavigation visible-sm-block">
                 <a class="prev"><i class="fa fa-angle-left"></i></a>
                 <a class="next"><i class="fa fa-angle-right"></i></a>
             </div>
         </div>
-        <script type="text/javascript">
-            $(function () {
-                var owl = $("#owl-tool");
-                owl.owlCarousel({
-                    items: 7,
-                    itemsDesktop: [1000, 7],
-                    itemsDesktopSmall: [992, 5],
-                    itemsTablet: [768, 5],
-                    itemsMobile: false
-                });
-                $(".next").click(function () {
-                    owl.trigger('owl.next');
-                })
-                $(".prev").click(function () {
-                    owl.trigger('owl.prev');
-                });
-            });
-            $(function () {
-                $(".tool-content .container").addClass('absh').animate({ opacity: 0.0, left: '-100px' }, 100, function () {
-                    $(this).delay(50);
-                    $(".tool-content .container").addClass('absh').animate({
-                        opacity: 1.0, left: '0'
-                    }, 500, function () {
-                        $(this).delay(10).removeClass('absh');
-                    });
-                });
-            });
-        </script>
+
     </div>
 </section>
 
@@ -195,4 +163,30 @@
     </div>
 </div>
 
+@section scripts{
+    <script type="text/javascript">
+        $('.tool-list-mobile #btn-toollist').click(function() {
+            $('.tool-list-mobile #mob-toollist-content').slideToggle(200);
+            $(this).toggleClass('active');
+        });
+        $('.tool-list-mobile #mob-toollist-content, .tool-list-mobile #btn-toollist').click(function(e) { e.stopPropagation(); });
+        $(document).click(function() {
+            $('.tool-list-mobile #mob-toollist-content').hide();
+            $('.tool-list-mobile #btn-toollist').removeClass('active');
+        });
+    </script>
 
+    <script type="text/javascript">
+        
+        $(function () {
+            $(".tool-content .container").addClass('absh').animate({ opacity: 0.0, left: '-100px' }, 100, function () {
+                $(this).delay(50);
+                $(".tool-content .container").addClass('absh').animate({
+                    opacity: 1.0, left: '0'
+                }, 500, function () {
+                    $(this).delay(10).removeClass('absh');
+                });
+            });
+        });
+    </script>
+}

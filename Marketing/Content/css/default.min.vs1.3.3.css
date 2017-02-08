@@ -17528,7 +17528,7 @@ span.tooltip-text {
     }
 
     .header li ul li.icontop {
-        background-image: url("/Themes/Portal/Default/Images/banner/icon-submenu.png");
+        background-image: url("../Images/banner/icon-submenu.png");
         background-position: center top;
         background-repeat: no-repeat;
         height: 9px;

@@ -62,5 +62,9 @@ namespace Marketing.Controllers
         {
             return View();
         }
+        public ActionResult BanHangUuViet()
+        {
+            return View();
+        }
     }
 }
