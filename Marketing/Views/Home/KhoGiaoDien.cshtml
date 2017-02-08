@@ -8,8 +8,8 @@
     @Html.Partial("_Header2")
 }
 @section styles{
-<link href="~/Content/css/style.min.css" rel="stylesheet" />
-<link href="~/Content/css/slide-theme.css" rel="stylesheet" />
+@*<link href="~/Content/css/style.min.css" rel="stylesheet" />
+<link href="~/Content/css/slide-theme.css" rel="stylesheet" />*@
 }
 <div id="dvBanner">
     <div class="row banner-container">
@@ -28,7 +28,7 @@
             <div id="toolbar">
                 <div role="toolbar" class="btn-toolbar">
                     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-4 dvtoolbar dvtool input-search">
-                        <form method="get" accept-charset="UTF-8" action="/ThemeStore/search/" id="formSearch" novalidate="novalidate">
+                        <form method="get" id="formSearch" novalidate="novalidate">
                             <div class="input-group">
                                 <input id="search" type="text" name="search" class="form-control" placeholder="Bạn tìm giao diện gì?">
                                 <span class="input-group-btn">
@@ -85,117 +85,112 @@
                     </div>
                 </div>
             </div>
-            <script src="/Themes/Portal/Shared/Scripts/loadToolbarPartial.js"></script>
+            <script src="~/Content/js/loadToolbarPartial.js"></script> 
 
             <script>
-    $(document).ready(function () {
-        var priceParam = parse('price');
-        if (priceParam == 'free') {
-            $('#dvPrice a').removeClass("active");
-            $('#dvPrice a.free').addClass("active");
-        }
-        else if (priceParam == 'paid') {
-            $('#dvPrice a').removeClass("active");
-            $('#dvPrice a.paid').addClass("active");
-        }
-        else {
-            $('#dvPrice a').removeClass("active");
-            $('#dvPrice a.all').addClass("active");
-        }
-
-
-
-
-
-
-        setTimeout(function () {
-            var collectionParam = parse('collection');
-            if (collectionParam != null && collectionParam != '') {
-                $('#CollectionId').val(collectionParam);
-                $('#CollectionId option[value="' + collectionParam + '"]').attr('selected', 'selected');
-                $(document).find('#dvColletion li[data-original-index="' + collectionParam + '"]').addClass('background-selected');
-                $(document).find('#dvColletion li[data-original-index="0"]').removeClass('selected');
-                $(document).find('#dvColletion button[data-id="CollectionId"]').attr('title', '');
-                if ($("#CollectionId option:selected").text().length > 20) {
-                    var sel_text = $("#CollectionId option:selected").text().substr(0, 15);
-                    $("#CollectionId").parent().find(".bootstrap-select .filter-option").text(sel_text + "...");
+            $(document).ready(function () {
+                var priceParam = parse('price');
+                if (priceParam == 'free') {
+                    $('#dvPrice a').removeClass("active");
+                    $('#dvPrice a.free').addClass("active");
+                }
+                else if (priceParam == 'paid') {
+                    $('#dvPrice a').removeClass("active");
+                    $('#dvPrice a.paid').addClass("active");
                 }
                 else {
-                    $("#CollectionId").parent().find(".bootstrap-select .filter-option").text($("#CollectionId option:selected").text());
+                    $('#dvPrice a').removeClass("active");
+                    $('#dvPrice a.all').addClass("active");
                 }
-                //We need to show the text inside the span that the plugin show
+         
+                setTimeout(function () {
+                    var collectionParam = parse('collection');
+                    if (collectionParam != null && collectionParam != '') {
+                        $('#CollectionId').val(collectionParam);
+                        $('#CollectionId option[value="' + collectionParam + '"]').attr('selected', 'selected');
+                        $(document).find('#dvColletion li[data-original-index="' + collectionParam + '"]').addClass('background-selected');
+                        $(document).find('#dvColletion li[data-original-index="0"]').removeClass('selected');
+                        $(document).find('#dvColletion button[data-id="CollectionId"]').attr('title', '');
+                        if ($("#CollectionId option:selected").text().length > 20) {
+                            var sel_text = $("#CollectionId option:selected").text().substr(0, 15);
+                            $("#CollectionId").parent().find(".bootstrap-select .filter-option").text(sel_text + "...");
+                        }
+                        else {
+                            $("#CollectionId").parent().find(".bootstrap-select .filter-option").text($("#CollectionId option:selected").text());
+                        }
+                        //We need to show the text inside the span that the plugin show
 
-            }
-
-            //var collectionParam = parse('collection');
-            //if (collectionParam.length) {
-            //    if(collectionParam!='0')
-            //    $('#dvColletion ul li:first').hide();
-            //}
-
-            var origin_text = $("#CollectionId").parent().find(".bootstrap-select .filter-option").text();
-            if ($(window).width() >= 992 && $(window).width() < 1200) {
-                if (origin_text.length > 10) {
-                    var temp_text = origin_text.substr(0, 9);
-                    $("#CollectionId").parent().find(".bootstrap-select .filter-option").text(temp_text + "...");
-                }
-            }
-            else if ($(window).width() >= 1200)
-            {
-                if (origin_text.length > 20) {
-                    var temp_text = origin_text.substr(0, 17);
-                    $("#CollectionId").parent().find(".bootstrap-select .filter-option").text(temp_text + "...");
-                }
-            }
-
-
-            var sortParam = parse('sort');
-            if (sortParam != null && sortParam != '') {
-                $('#SortId').val(sortParam);
-                $('#SortId option[value="' + sortParam + '"]').attr('selected', 'selected');
-                $(document).find('#dvSort li[data-original-index="' + sortParam + '"]').addClass('background-selected');
-                $(document).find('#dvSort li[data-original-index="0"]').removeClass('selected');
-                $(document).find('#dvSort button[data-id="SortId"]').attr('title', '');
-                //We need to show the text inside the span that the plugin show
-                var sortText = $("#SortId option:selected").text();
-                if ($(window).width() >= 992 && $(window).width() < 1200) {
-                    if (sortText.length > 10) {
-                        sortText = sortText.substr(0, 9);
                     }
-                }
-                $("#SortId").parent().find(".bootstrap-select .filter-option").text(sortText);
 
-            }
+                    //var collectionParam = parse('collection');
+                    //if (collectionParam.length) {
+                    //    if(collectionParam!='0')
+                    //    $('#dvColletion ul li:first').hide();
+                    //}
 
-        }, 300);
-
-        var searchParam = parse('search');
-        $("#search").val(searchParam);
-
-        $("#btnSearch").click(function () {
-            $("#formSearch").submit();
-        });
-        //var dropdownList = $("#SearchId");
-
-        $("#SortId").change(function () {
-            loadTheme();
-        });
-
-        $("#CollectionId").change(function () {
-            loadTheme();
-        });
-
-        $('#dvPrice a').click(function () {
-            $('#dvPrice a').removeClass("active");
-            $(this).addClass("active");
-            //console.log('ok');
-            loadTheme();
-
-            return false;
-        });
+                    var origin_text = $("#CollectionId").parent().find(".bootstrap-select .filter-option").text();
+                    if ($(window).width() >= 992 && $(window).width() < 1200) {
+                        if (origin_text.length > 10) {
+                            var temp_text = origin_text.substr(0, 9);
+                            $("#CollectionId").parent().find(".bootstrap-select .filter-option").text(temp_text + "...");
+                        }
+                    }
+                    else if ($(window).width() >= 1200)
+                    {
+                        if (origin_text.length > 20) {
+                            var temp_text = origin_text.substr(0, 17);
+                            $("#CollectionId").parent().find(".bootstrap-select .filter-option").text(temp_text + "...");
+                        }
+                    }
 
 
-    });
+                    var sortParam = parse('sort');
+                    if (sortParam != null && sortParam != '') {
+                        $('#SortId').val(sortParam);
+                        $('#SortId option[value="' + sortParam + '"]').attr('selected', 'selected');
+                        $(document).find('#dvSort li[data-original-index="' + sortParam + '"]').addClass('background-selected');
+                        $(document).find('#dvSort li[data-original-index="0"]').removeClass('selected');
+                        $(document).find('#dvSort button[data-id="SortId"]').attr('title', '');
+                        //We need to show the text inside the span that the plugin show
+                        var sortText = $("#SortId option:selected").text();
+                        if ($(window).width() >= 992 && $(window).width() < 1200) {
+                            if (sortText.length > 10) {
+                                sortText = sortText.substr(0, 9);
+                            }
+                        }
+                        $("#SortId").parent().find(".bootstrap-select .filter-option").text(sortText);
+
+                    }
+
+                }, 300);
+
+                var searchParam = parse('search');
+                $("#search").val(searchParam);
+
+                $("#btnSearch").click(function () {
+                    $("#formSearch").submit();
+                });
+                //var dropdownList = $("#SearchId");
+
+                $("#SortId").change(function () {
+                    loadTheme();
+                });
+
+                $("#CollectionId").change(function () {
+                    loadTheme();
+                });
+
+                $('#dvPrice a').click(function () {
+                    $('#dvPrice a').removeClass("active");
+                    $(this).addClass("active");
+                    //console.log('ok');
+                    loadTheme();
+
+                    return false;
+                });
+
+
+            });
 
     function parse(val) {
         var result = "",
@@ -217,9 +212,9 @@
         <div class="clear"></div>
         <div id="wrapper" class="default-wrapper">
 
-            <link href="/Themes/Portal/Default/Styles/slide-theme.css?v=135" rel="stylesheet">
+    
             <div class="col-lg-12 text-center hidden" id="loadTheme">
-                <img src="/Themes/Portal/Shared/Images/spinner.gif">
+                <img src="~/Content/images/newlogo/spinner.gif" /> 
             </div>
 
             <div class="slide-theme">
@@ -229,7 +224,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-lg-push-6 text-col">
                                     <h2>Template, giao diện mẫu <span>Ateck</span></h2>
-                                    <img src="/Themes/Portal/Default/Images/5-star.png">
+                                    <img src="~/Content/images/newlogo/5-star.png" /> 
                                     <p>Giá dành cho bạn : <span>1,200,000 VNĐ</span></p>
                                     <div class="registration-block">
                                         <a href="/demo/ateck" class="btn-registration">Xem demo</a>
@@ -254,7 +249,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-lg-push-6 text-col">
                                     <h2>Template, giao diện mẫu <span>Maxxshop</span></h2>
-                                    <img src="/Themes/Portal/Default/Images/5-star.png">
+                                    <img src="~/Content/images/newlogo/5-star.png" /> 
                                     <p>Giá dành cho bạn : <span>700,000 VNĐ</span></p>
                                     <div class="registration-block">
                                         <a href="/demo/maxxshop" class="btn-registration">Xem demo</a>
@@ -279,7 +274,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-lg-push-6 text-col">
                                     <h2>Template, giao diện mẫu <span>Perfume Rise</span></h2>
-                                    <img src="/Themes/Portal/Default/Images/5-star.png">
+                                    <img src="~/Content/images/newlogo/5-star.png" /> 
                                     <p>Giá dành cho bạn : <span>500,000 VNĐ</span></p>
                                     <div class="registration-block">
                                         <a href="/demo/perfume-rise" class="btn-registration">Xem demo</a>
@@ -304,7 +299,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-lg-push-6 text-col">
                                     <h2>Template, giao diện mẫu <span>Ateck</span></h2>
-                                    <img src="/Themes/Portal/Default/Images/5-star.png">
+                                    <img src="~/Content/images/newlogo/5-star.png" /> 
                                     <p>Giá dành cho bạn : <span>1,200,000 VNĐ</span></p>
                                     <div class="registration-block">
                                         <a href="/demo/ateck" class="btn-registration">Xem demo</a>
@@ -329,7 +324,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-lg-push-6 text-col">
                                     <h2>Template, giao diện mẫu <span>Maxxshop</span></h2>
-                                    <img src="/Themes/Portal/Default/Images/5-star.png">
+                                    <img src="~/Content/images/newlogo/5-star.png" /> 
                                     <p>Giá dành cho bạn : <span>700,000 VNĐ</span></p>
                                     <div class="registration-block">
                                         <a href="/demo/maxxshop" class="btn-registration">Xem demo</a>
@@ -358,7 +353,7 @@
 
 
             <div class="line">
-                <img src="/Themes/Portal/Default/Images/line.png">
+                <img src="~/Content/images/newlogo/line.png" /> 
             </div>
 
             <div class="hot-theme">
@@ -686,19 +681,19 @@
                     <h3>Sử dụng giao diện website bán hàng<span> đẹp mắt chỉ sau 3 bước</span></h3>
                     <div class="row">
                         <div class="col-md-4 col-xs-12 col-sm-4 item">
-                            <img src="/Themes/Portal/Default/Images/step-1.png">
+                            <img src="~/Content/images/newlogo/step-1.png" /> 
                             <p>Bước 1</p>
-                            <span>Chọn giao diện mẫu phù hợp với nhu cầu của bạn</span>
-                            <img class="arrow hidden-xs" src="/Themes/Portal/Default/Images/landing-arrow.png">
+                            <span>Chọn giao diện mẫu phù hợp với nhu cầu của bạn</span> 
+                            <img class="arrow hidden-xs" src="~/Content/images/newlogo/landing-arrow.png" />
                         </div>
                         <div class="col-md-4 col-xs-12 col-sm-4 item">
-                            <img src="/Themes/Portal/Default/Images/step-2.png">
+                            <img src="~/Content/images/newlogo/step-2.png" /> 
                             <p>Bước 2</p>
                             <span>Tùy chỉnh giao diện dễ dàng theo ý muốn</span>
-                            <img class="arrow hidden-xs" src="/Themes/Portal/Default/Images/landing-arrow.png">
+                            <img class="arrow hidden-xs" src="~/Content/images/newlogo/landing-arrow.png" />
                         </div>
                         <div class="col-md-4 col-xs-12 col-sm-4 item">
-                            <img src="/Themes/Portal/Default/Images/step-3.png">
+                            <img src="~/Content/images/newlogo/step-3.png" /> 
                             <p>Bước 3</p>
                             <span>Bắt đầu bán hàng online chuyên nghiệp</span>
                         </div>
