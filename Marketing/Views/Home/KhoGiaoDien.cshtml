@@ -8,8 +8,8 @@
     @Html.Partial("_Header2")
 }
 @section styles{
-@*<link href="~/Content/css/style.min.css" rel="stylesheet" />
-<link href="~/Content/css/slide-theme.css" rel="stylesheet" />*@
+    @*<link href="~/Content/css/style.min.css" rel="stylesheet" />
+        <link href="~/Content/css/slide-theme.css" rel="stylesheet" />*@
 }
 <div id="dvBanner">
     <div class="row banner-container">
@@ -33,9 +33,7 @@
                                 <input id="search" type="text" name="search" class="form-control" placeholder="Bạn tìm giao diện gì?">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="button" id="btnSearch" style="position :relative;">
-
                                         <span class="icon-search"></span>
-
                                     </button>
                                 </span>
                             </div><!-- /input-group -->
@@ -47,13 +45,11 @@
                             <a role="button" val="free" class="btn btn-default border-0 free" href="/?price=free">Miễn phí</a>
                             <a role="button" val="paid" class="btn btn-default paid" href="/?price=paid">Trả phí</a>
                         </div>
-
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2 dvtool dvColletion">
                         <div id="dvColletion">
-
-                            <select id="CollectionId" class="form-control selectpicker" name="CollectionId" style="display:none;">
+                            <select id="CollectionId" class="form-control selectpicker" name="CollectionId" @*style="display: none;"*@>
                                 <option value="">Tất cả ngành nghề</option>
                                 <option value="1">Công nghệ - Kỹ thuật số</option>
                                 <option value="2">Thiết bị điện</option>
@@ -62,159 +58,37 @@
                                 <option value="5">Thể thao - Dịch vụ</option>
                                 <option value="6">Nội thất - Trang trí văn phòng</option>
                                 <option value="7">Sinh hoạt - Gia dụng</option>
-
                                 <option value="9">Bất động sản - Xây dựng</option>
                                 <option value="10">Thủ công - Mỹ nghệ - Quà tặng</option>
-
                                 <option value="12">Khác</option>
 
-                            </select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" data-id="CollectionId" title="Tất cả ngành nghề"><span class="filter-option pull-left">Tất cả ngành nghề</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner" role="menu"><li data-original-index="0" class="selected"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Tất cả nganh nghề</span>" data-tokens="null"><span class="text">Tất cả ngành nghề</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Cong nghệ - Kỹ thuật số</span>" data-tokens="null"><span class="text">Công nghệ - Kỹ thuật số</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Thiết bị điện</span>" data-tokens="null"><span class="text">Thiết bị điện</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Thời trang - Trang sức</span>" data-tokens="null"><span class="text">Thời trang - Trang sức</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Thực phẩm - Nha hang</span>" data-tokens="null"><span class="text">Thực phẩm - Nhà hàng</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Thể thao - Dịch vụ</span>" data-tokens="null"><span class="text">Thể thao - Dịch vụ</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="6"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Nội thất - Trang tri văn phong</span>" data-tokens="null"><span class="text">Nội thất - Trang trí văn phòng</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="7"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Sinh hoạt - Gia dụng</span>" data-tokens="null"><span class="text">Sinh hoạt - Gia dụng</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="8"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Bất động sản - Xay dựng</span>" data-tokens="null"><span class="text">Bất động sản - Xây dựng</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="9"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Thủ cong - Mỹ nghệ - Qua tặng</span>" data-tokens="null"><span class="text">Thủ công - Mỹ nghệ - Quà tặng</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="10"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Khac</span>" data-tokens="null"><span class="text">Khác</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>
+                            </select>
+                            
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2 dvtool dvSort">
                         <div id="dvSort">
-                            <select name="SortId" id="SortId" class="form-control selectpicker" style="display: none;">
+                            <select  class="form-control selectpicker" @*style="display: block;"*@>
                                 <option value="">Sắp xếp</option>
                                 <option value="1">Giá từ thấp đến cao</option>
                                 <option value="2">Giá từ cao đến thấp</option>
                                 <option value="3">Tên A - Z</option>
                                 <option value="4">Tên Z - A</option>
                                 <option value="5">Bán chạy nhất</option>
-                            </select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" data-id="SortId" title="Sắp xếp"><span class="filter-option pull-left">Sắp xếp</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner" role="menu"><li data-original-index="0" class="selected"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Sắp xếp</span>" data-tokens="null"><span class="text">Sắp xếp</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Gia từ thấp đến cao</span>" data-tokens="null"><span class="text">Giá từ thấp đến cao</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Gia từ cao đến thấp</span>" data-tokens="null"><span class="text">Giá từ cao đến thấp</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Ten A - Z</span>" data-tokens="null"><span class="text">Tên A - Z</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Ten Z - A</span>" data-tokens="null"><span class="text">Tên Z - A</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Ban chạy nhất</span>" data-tokens="null"><span class="text">Bán chạy nhất</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>
+                            </select>
+                            @*<div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle btn-default" data-toggle="dropdown" data-id="SortId" title="Sắp xếp"><span class="filter-option pull-left">Sắp xếp</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner" role="menu"><li data-original-index="0" class="selected"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Sắp xếp</span>" data-tokens="null"><span class="text">Sắp xếp</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Gia từ thấp đến cao</span>" data-tokens="null"><span class="text">Giá từ thấp đến cao</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Gia từ cao đến thấp</span>" data-tokens="null"><span class="text">Giá từ cao đến thấp</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Ten A - Z</span>" data-tokens="null"><span class="text">Tên A - Z</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Ten Z - A</span>" data-tokens="null"><span class="text">Tên Z - A</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" data-normalized-text="<span class=&quot;text&quot;>Ban chạy nhất</span>" data-tokens="null"><span class="text">Bán chạy nhất</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>*@
                         </div>
                     </div>
                 </div>
             </div>
-            <script src="~/Content/js/loadToolbarPartial.js"></script> 
-
-            <script>
-            $(document).ready(function () {
-                var priceParam = parse('price');
-                if (priceParam == 'free') {
-                    $('#dvPrice a').removeClass("active");
-                    $('#dvPrice a.free').addClass("active");
-                }
-                else if (priceParam == 'paid') {
-                    $('#dvPrice a').removeClass("active");
-                    $('#dvPrice a.paid').addClass("active");
-                }
-                else {
-                    $('#dvPrice a').removeClass("active");
-                    $('#dvPrice a.all').addClass("active");
-                }
-         
-                setTimeout(function () {
-                    var collectionParam = parse('collection');
-                    if (collectionParam != null && collectionParam != '') {
-                        $('#CollectionId').val(collectionParam);
-                        $('#CollectionId option[value="' + collectionParam + '"]').attr('selected', 'selected');
-                        $(document).find('#dvColletion li[data-original-index="' + collectionParam + '"]').addClass('background-selected');
-                        $(document).find('#dvColletion li[data-original-index="0"]').removeClass('selected');
-                        $(document).find('#dvColletion button[data-id="CollectionId"]').attr('title', '');
-                        if ($("#CollectionId option:selected").text().length > 20) {
-                            var sel_text = $("#CollectionId option:selected").text().substr(0, 15);
-                            $("#CollectionId").parent().find(".bootstrap-select .filter-option").text(sel_text + "...");
-                        }
-                        else {
-                            $("#CollectionId").parent().find(".bootstrap-select .filter-option").text($("#CollectionId option:selected").text());
-                        }
-                        //We need to show the text inside the span that the plugin show
-
-                    }
-
-                    //var collectionParam = parse('collection');
-                    //if (collectionParam.length) {
-                    //    if(collectionParam!='0')
-                    //    $('#dvColletion ul li:first').hide();
-                    //}
-
-                    var origin_text = $("#CollectionId").parent().find(".bootstrap-select .filter-option").text();
-                    if ($(window).width() >= 992 && $(window).width() < 1200) {
-                        if (origin_text.length > 10) {
-                            var temp_text = origin_text.substr(0, 9);
-                            $("#CollectionId").parent().find(".bootstrap-select .filter-option").text(temp_text + "...");
-                        }
-                    }
-                    else if ($(window).width() >= 1200)
-                    {
-                        if (origin_text.length > 20) {
-                            var temp_text = origin_text.substr(0, 17);
-                            $("#CollectionId").parent().find(".bootstrap-select .filter-option").text(temp_text + "...");
-                        }
-                    }
-
-
-                    var sortParam = parse('sort');
-                    if (sortParam != null && sortParam != '') {
-                        $('#SortId').val(sortParam);
-                        $('#SortId option[value="' + sortParam + '"]').attr('selected', 'selected');
-                        $(document).find('#dvSort li[data-original-index="' + sortParam + '"]').addClass('background-selected');
-                        $(document).find('#dvSort li[data-original-index="0"]').removeClass('selected');
-                        $(document).find('#dvSort button[data-id="SortId"]').attr('title', '');
-                        //We need to show the text inside the span that the plugin show
-                        var sortText = $("#SortId option:selected").text();
-                        if ($(window).width() >= 992 && $(window).width() < 1200) {
-                            if (sortText.length > 10) {
-                                sortText = sortText.substr(0, 9);
-                            }
-                        }
-                        $("#SortId").parent().find(".bootstrap-select .filter-option").text(sortText);
-
-                    }
-
-                }, 300);
-
-                var searchParam = parse('search');
-                $("#search").val(searchParam);
-
-                $("#btnSearch").click(function () {
-                    $("#formSearch").submit();
-                });
-                //var dropdownList = $("#SearchId");
-
-                $("#SortId").change(function () {
-                    loadTheme();
-                });
-
-                $("#CollectionId").change(function () {
-                    loadTheme();
-                });
-
-                $('#dvPrice a').click(function () {
-                    $('#dvPrice a').removeClass("active");
-                    $(this).addClass("active");
-                    //console.log('ok');
-                    loadTheme();
-
-                    return false;
-                });
-
-
-            });
-
-    function parse(val) {
-        var result = "",
-            tmp = [];
-        location.search
-        //.replace ( "?", "" )
-        // this is better, there might be a question mark inside
-        .substr(1)
-            .split("&")
-            .forEach(function (item) {
-                tmp = item.split("=");
-                if (tmp[0] === val) result = decodeURIComponent(tmp[1]);
-            });
-        return result;
-    }
-            </script>
 
         </div>
         <div class="clear"></div>
         <div id="wrapper" class="default-wrapper">
 
-    
+
             <div class="col-lg-12 text-center hidden" id="loadTheme">
-                <img src="~/Content/images/newlogo/spinner.gif" /> 
+                <img src="~/Content/images/newlogo/spinner.gif" />
             </div>
 
             <div class="slide-theme">
@@ -224,7 +98,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-lg-push-6 text-col">
                                     <h2>Template, giao diện mẫu <span>Ateck</span></h2>
-                                    <img src="~/Content/images/newlogo/5-star.png" /> 
+                                    <img src="~/Content/images/newlogo/5-star.png" />
                                     <p>Giá dành cho bạn : <span>1,200,000 VNĐ</span></p>
                                     <div class="registration-block">
                                         <a href="/demo/ateck" class="btn-registration">Xem demo</a>
@@ -249,7 +123,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-lg-push-6 text-col">
                                     <h2>Template, giao diện mẫu <span>Maxxshop</span></h2>
-                                    <img src="~/Content/images/newlogo/5-star.png" /> 
+                                    <img src="~/Content/images/newlogo/5-star.png" />
                                     <p>Giá dành cho bạn : <span>700,000 VNĐ</span></p>
                                     <div class="registration-block">
                                         <a href="/demo/maxxshop" class="btn-registration">Xem demo</a>
@@ -274,7 +148,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-lg-push-6 text-col">
                                     <h2>Template, giao diện mẫu <span>Perfume Rise</span></h2>
-                                    <img src="~/Content/images/newlogo/5-star.png" /> 
+                                    <img src="~/Content/images/newlogo/5-star.png" />
                                     <p>Giá dành cho bạn : <span>500,000 VNĐ</span></p>
                                     <div class="registration-block">
                                         <a href="/demo/perfume-rise" class="btn-registration">Xem demo</a>
@@ -299,7 +173,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-lg-push-6 text-col">
                                     <h2>Template, giao diện mẫu <span>Ateck</span></h2>
-                                    <img src="~/Content/images/newlogo/5-star.png" /> 
+                                    <img src="~/Content/images/newlogo/5-star.png" />
                                     <p>Giá dành cho bạn : <span>1,200,000 VNĐ</span></p>
                                     <div class="registration-block">
                                         <a href="/demo/ateck" class="btn-registration">Xem demo</a>
@@ -324,7 +198,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-lg-push-6 text-col">
                                     <h2>Template, giao diện mẫu <span>Maxxshop</span></h2>
-                                    <img src="~/Content/images/newlogo/5-star.png" /> 
+                                    <img src="~/Content/images/newlogo/5-star.png" />
                                     <p>Giá dành cho bạn : <span>700,000 VNĐ</span></p>
                                     <div class="registration-block">
                                         <a href="/demo/maxxshop" class="btn-registration">Xem demo</a>
@@ -353,7 +227,7 @@
 
 
             <div class="line">
-                <img src="~/Content/images/newlogo/line.png" /> 
+                <img src="~/Content/images/newlogo/line.png" />
             </div>
 
             <div class="hot-theme">
@@ -681,19 +555,19 @@
                     <h3>Sử dụng giao diện website bán hàng<span> đẹp mắt chỉ sau 3 bước</span></h3>
                     <div class="row">
                         <div class="col-md-4 col-xs-12 col-sm-4 item">
-                            <img src="~/Content/images/newlogo/step-1.png" /> 
+                            <img src="~/Content/images/newlogo/step-1.png" />
                             <p>Bước 1</p>
-                            <span>Chọn giao diện mẫu phù hợp với nhu cầu của bạn</span> 
+                            <span>Chọn giao diện mẫu phù hợp với nhu cầu của bạn</span>
                             <img class="arrow hidden-xs" src="~/Content/images/newlogo/landing-arrow.png" />
                         </div>
                         <div class="col-md-4 col-xs-12 col-sm-4 item">
-                            <img src="~/Content/images/newlogo/step-2.png" /> 
+                            <img src="~/Content/images/newlogo/step-2.png" />
                             <p>Bước 2</p>
                             <span>Tùy chỉnh giao diện dễ dàng theo ý muốn</span>
                             <img class="arrow hidden-xs" src="~/Content/images/newlogo/landing-arrow.png" />
                         </div>
                         <div class="col-md-4 col-xs-12 col-sm-4 item">
-                            <img src="~/Content/images/newlogo/step-3.png" /> 
+                            <img src="~/Content/images/newlogo/step-3.png" />
                             <p>Bước 3</p>
                             <span>Bắt đầu bán hàng online chuyên nghiệp</span>
                         </div>
@@ -725,25 +599,150 @@
                 </div>
                 {{/themes}}
             </script>
-            <script>
-    var commentSwiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        slidesPerView: 1,
-        paginationClickable: true,
-        preventClicks: false,
-        preventClicksPropagation: false,
-        loop: true,
-        autoplay: 5000
-    });
 
-    $(function () {
-        //$(window).resize(function () {
-        //    commentSwiper();
-        //});
-        $(document).bind('DOMMouseScroll', function (e) {
-            if (e.originalEvent.detail <= 0) {
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/Content/js/loadToolbarPartial.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var priceParam = parse('price');
+            if (priceParam == 'free') {
+                $('#dvPrice a').removeClass("active");
+                $('#dvPrice a.free').addClass("active");
+            } else if (priceParam == 'paid') {
+                $('#dvPrice a').removeClass("active");
+                $('#dvPrice a.paid').addClass("active");
+            } else {
+                $('#dvPrice a').removeClass("active");
+                $('#dvPrice a.all').addClass("active");
+            }
+
+            setTimeout(function () {
+                var collectionParam = parse('collection');
+                if (collectionParam != null && collectionParam != '') {
+                    $('#CollectionId').val(collectionParam);
+                    $('#CollectionId option[value="' + collectionParam + '"]').attr('selected', 'selected');
+                    $(document).find('#dvColletion li[data-original-index="' + collectionParam + '"]').addClass('background-selected');
+                    $(document).find('#dvColletion li[data-original-index="0"]').removeClass('selected');
+                    $(document).find('#dvColletion button[data-id="CollectionId"]').attr('title', '');
+                    if ($("#CollectionId option:selected").text().length > 20) {
+                        var sel_text = $("#CollectionId option:selected").text().substr(0, 15);
+                        $("#CollectionId").parent().find(".bootstrap-select .filter-option").text(sel_text + "...");
+                    } else {
+                        $("#CollectionId").parent().find(".bootstrap-select .filter-option").text($("#CollectionId option:selected").text());
+                    }
+                    //We need to show the text inside the span that the plugin show
+
+                }
+
+                //var collectionParam = parse('collection');
+                //if (collectionParam.length) {
+                //    if(collectionParam!='0')
+                //    $('#dvColletion ul li:first').hide();
+                //}
+
+                var origin_text = $("#CollectionId").parent().find(".bootstrap-select .filter-option").text();
+                if ($(window).width() >= 992 && $(window).width() < 1200) {
+                    if (origin_text.length > 10) {
+                        var temp_text = origin_text.substr(0, 9);
+                        $("#CollectionId").parent().find(".bootstrap-select .filter-option").text(temp_text + "...");
+                    }
+                } else if ($(window).width() >= 1200) {
+                    if (origin_text.length > 20) {
+                        var temp_text = origin_text.substr(0, 17);
+                        $("#CollectionId").parent().find(".bootstrap-select .filter-option").text(temp_text + "...");
+                    }
+                }
+
+
+                var sortParam = parse('sort');
+                if (sortParam != null && sortParam != '') {
+                    $('#SortId').val(sortParam);
+                    $('#SortId option[value="' + sortParam + '"]').attr('selected', 'selected');
+                    $(document).find('#dvSort li[data-original-index="' + sortParam + '"]').addClass('background-selected');
+                    $(document).find('#dvSort li[data-original-index="0"]').removeClass('selected');
+                    $(document).find('#dvSort button[data-id="SortId"]').attr('title', '');
+                    //We need to show the text inside the span that the plugin show
+                    var sortText = $("#SortId option:selected").text();
+                    if ($(window).width() >= 992 && $(window).width() < 1200) {
+                        if (sortText.length > 10) {
+                            sortText = sortText.substr(0, 9);
+                        }
+                    }
+                    $("#SortId").parent().find(".bootstrap-select .filter-option").text(sortText);
+
+                }
+
+            }, 300);
+
+            var searchParam = parse('search');
+            $("#search").val(searchParam);
+
+            $("#btnSearch").click(function () {
+                $("#formSearch").submit();
+            });
+            //var dropdownList = $("#SearchId");
+
+            $("#SortId").change(function () {
+                loadTheme();
+            });
+
+            $("#CollectionId").change(function () {
+                loadTheme();
+            });
+
+            $('#dvPrice a').click(function () {
+                $('#dvPrice a').removeClass("active");
+                $(this).addClass("active");
+                //console.log('ok');
+                loadTheme();
+
+                return false;
+            });
+
+
+        });
+
+        function parse(val) {
+            var result = "",
+                tmp = [];
+            location.search
+                //.replace ( "?", "" )
+                // this is better, there might be a question mark inside
+                .substr(1)
+                .split("&")
+                .forEach(function (item) {
+                    tmp = item.split("=");
+                    if (tmp[0] === val) result = decodeURIComponent(tmp[1]);
+                });
+            return result;
+        }
+    </script>
+
+    <script>
+        var commentSwiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            slidesPerView: 1,
+            paginationClickable: true,
+            preventClicks: false,
+            preventClicksPropagation: false,
+            loop: true,
+            autoplay: 5000
+        });
+
+        $(function () {
+            //$(window).resize(function () {
+            //    commentSwiper();
+            //});
+            $(document).bind('DOMMouseScroll', function (e) {
+                if (e.originalEvent.detail <= 0) {
                     if ($(this).scrollTop() >= $('.hot-theme').offset().top) {
                         $(".scroll-top-bar").show();
                     }
@@ -753,67 +752,61 @@
                     if ($(this).scrollTop() >= $('.guide-step').offset().top) {
                         $(".scroll-top-bar").hide();
                     }
-            }
-            else
-            {
-                $(".scroll-top-bar").hide();
-            }
-        });
-        //IE, Opera, Safari
-        $(document).bind('mousewheel', function (e) {
-            if (e.originalEvent.wheelDelta >= 0) {
-                if ($(this).scrollTop() >= $('.hot-theme').offset().top) {
-                    $(".scroll-top-bar").show();
                 }
                 else {
                     $(".scroll-top-bar").hide();
                 }
-                if ($(this).scrollTop() >= $('.guide-step').offset().top) {
+            });
+            //IE, Opera, Safari
+            $(document).bind('mousewheel', function (e) {
+                if (e.originalEvent.wheelDelta >= 0) {
+                    if ($(this).scrollTop() >= $('.hot-theme').offset().top) {
+                        $(".scroll-top-bar").show();
+                    }
+                    else {
+                        $(".scroll-top-bar").hide();
+                    }
+                    if ($(this).scrollTop() >= $('.guide-step').offset().top) {
+                        $(".scroll-top-bar").hide();
+                    }
+                }
+                else {
                     $(".scroll-top-bar").hide();
                 }
-            }
-            else {
-                $(".scroll-top-bar").hide();
-            }
+            });
+
         });
 
-    });
+        function commentSwiper() {
+            if ($(window).width() < 768) {
+                var commentSwiper = new Swiper('.swiper-container', {
+                    autoplayDisableOnInteraction: false,
+                    grabCursor: true,
+                    pagination: '.swiper-pagination',
+                    paginationClickable: true,
+                    nextButton: '.swiper-button-next',
+                    prevButton: '.swiper-button-prev',
+                    slidesPerView: 1,
+                    loop: true,
 
-    function commentSwiper() {
-        if ($(window).width() < 768) {
-            var commentSwiper = new Swiper('.swiper-container', {
-                autoplayDisableOnInteraction: false,
-                grabCursor: true,
-                pagination: '.swiper-pagination',
-                paginationClickable: true,
-                nextButton: '.swiper-button-next',
-                prevButton: '.swiper-button-prev',
-                slidesPerView: 1,
-                loop: true,
+                });
+            }
+            else if ($(window).width() > 1199) {
 
-            });
+            }
+            else {
+                var commentSwiper = new Swiper('.swiper-container', {
+                    pagination: '.swiper-pagination',
+                    paginationClickable: true,
+                    //nextButton: '.swiper-button-next',
+                    //prevButton: '.swiper-button-prev',
+                    slidesPerView: 1,
+                    loop: true,
+                    autoplayDisableOnInteraction: false,
+                });
+            }
         }
-        else if ($(window).width() > 1199) {
+    </script>
 
-        }
-        else {
-            var commentSwiper = new Swiper('.swiper-container', {
-                pagination: '.swiper-pagination',
-                paginationClickable: true,
-                //nextButton: '.swiper-button-next',
-                //prevButton: '.swiper-button-prev',
-                slidesPerView: 1,
-                loop: true,
-                autoplayDisableOnInteraction: false,
-            });
-        }
-    }
-            </script>
-            <div class="clear"></div>
-        </div>
-    </div>
-</div>
-
-@section scripts{
-<script src="~/Content/js/script.js"></script>
+    <script src="~/Content/js/script.js"></script>
 }

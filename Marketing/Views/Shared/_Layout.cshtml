@@ -36,6 +36,7 @@
     <script src="~/Content/swiper3/js/swiper.js"></script>
 
     @RenderSection("styles",false)
+    <script src="/Content/js/add-new-shop.js"></script>
 </head>
 <body>
 
@@ -128,54 +129,10 @@
             <i class="fa fa-chevron-down" aria-hidden="true"></i>
         </div>
     </div>
-
-
-    <script src="~/Content/js/add-new-shop.js"></script>
-    <!-- Start of LiveChat (www.livechatinc.com) code -->
-    <script type="text/javascript">
-        var __lc = {};
-        __lc.license = 4036971;
-        $(function() {
-            (function() {
-                var lc = document.createElement('script');
-                lc.type = 'text/javascript';
-                lc.async = true;
-                lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(lc, s);
-            })();
-        });
-    </script>
-
-    <script type="text/javascript">
-        $(function() {
-            $(".advertise-zone i").click(function() {
-                $(".advertise-zone .banner-full").toggleClass("hidden");
-                $(".advertise-zone .banner-small").toggleClass("hidden");
-                $(this).toggleClass("active");
-            });
-        });
-    </script>
+     
 </div>
     <img class="scroll-top" src="~/Content/images/totop.png" style="display:none;cursor :pointer; position : fixed;bottom : 90px;right : 33px;z-index : 99999;" alt="BACK TO TOP" />
-    <script>
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                if ($(window).scrollTop() > 700) {
-                    $('.scroll-top').show();
-                } else {
-                    $('.scroll-top').hide();
-                }
-            });
-
-            $('.scroll-top').click(function() {
-                $("html, body").animate({ scrollTop: 0 }, "slow");
-            });
-            if ($(window).width() < 768) {
-                $('.scroll-top').css({ 'bottom': '90px', 'right': '8px' });
-            }
-        });
-    </script>
+    
     @RenderSection("scripts", false)
 </body>
 </html>

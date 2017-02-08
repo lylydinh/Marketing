@@ -10404,7 +10404,7 @@ button.close {
 }
 
 #formSearch .icon-search {
-    background: url(/Themes/Portal/Default/Images/new-search.png) no-repeat;
+    background: url('../Images/new-search.png') no-repeat;
     width: 17px;
     height: 18px;
     position: absolute;
@@ -10594,7 +10594,7 @@ button.close {
 
 .caret {
     border: 0 none;
-    background: url("/Themes/Portal/Default/Images/icon-down-g.png") no-repeat center;
+    background: url('../images/icon-down-g.png') no-repeat center;
     height: 11px;
     width: 20px;
     right: 20px !important;
@@ -12500,7 +12500,8 @@ body {
 }
 
 .sub-lv2 {
-    background: rgba(0,0,0,0) url("/Themes/Portal/Default/Images/icon-down-g.png") no-repeat scroll right center/13px auto;
+    background-image: url('../images/icon-down-g.png');
+    background: rgba(0,0,0,0) url('../images/icon-down-g.png') no-repeat scroll right center/13px auto;
     padding-right: 21px;
 }
 
@@ -14875,7 +14876,7 @@ a.link-regis {
 }
 
 .banner-container {
-    background: url("/Themes/Portal/Default/Images/bizweb_banner.png");
+    background: url("../Images/bizweb_banner.png");
     background-repeat: no-repeat;
     background-position: center center;
     margin-left: 0;
@@ -15361,7 +15362,7 @@ a.link-regis {
 }
 
 .sub-lv2 {
-    background: rgba(0,0,0,0) url("/Themes/Portal/Default/Images/icon-down-g.png") no-repeat scroll right center/13px auto;
+    background: rgba(0,0,0,0) url('../images/icon-down-g.png') no-repeat scroll right center/13px auto;
     padding-right: 21px;
 }
 
@@ -15469,7 +15470,7 @@ a.link-regis {
 }
 
 .footer {
-    background: url(/Themes/Portal/Default/Images/bg-pattern-2.jpg) scroll repeat;
+    background: url('../images/bg-pattern-2.jpg')  scroll repeat;
     background-color: #2a2f35;
     color: #ababab;
 }
@@ -15526,7 +15527,7 @@ a.link-regis {
     }
 
     .footer .footer-copyright {
-        background: url(/Themes/Portal/Default/Images/bg-pattern-3.jpg) scroll repeat;
+        background: url('../images/bg-pattern-3.jpg') scroll repeat;
         background-color: #23292f;
         color: #818283;
         padding: 5px 0;

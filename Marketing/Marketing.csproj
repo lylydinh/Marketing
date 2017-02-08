@@ -91,6 +91,7 @@
   <ItemGroup>
     <Content Include="bizweb.ico" />
     <Content Include="Content\css\add-more.css" />
+    <Content Include="Content\css\default.min.vs1.3.3.css" />
     <Content Include="Content\css\font-awesome.css" />
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\slide-theme.css" />
@@ -145,6 +146,8 @@
     <Content Include="Content\images\affiliate\sub-comment.png" />
     <Content Include="Content\images\affiliate\theme.png" />
     <Content Include="Content\images\app_check.png" />
+    <Content Include="Content\images\arrow-next.png" />
+    <Content Include="Content\images\arrow-prev.png" />
     <Content Include="Content\images\arrow-up.png" />
     <Content Include="Content\images\asset2\bg-info.jpg" />
     <Content Include="Content\images\asset2\bg-list.jpg" />
@@ -207,6 +210,7 @@
     <Content Include="Content\images\bg_registration.png" />
     <Content Include="Content\images\bg_top_new.jpg" />
     <Content Include="Content\images\bizweb.png" />
+    <Content Include="Content\images\bizweb_banner.png" />
     <Content Include="Content\images\bizweb_new_logo_short.png" />
     <Content Include="Content\images\bizweb_old_logo.png" />
     <Content Include="Content\images\bizweb_old_logo_short.png" />
@@ -276,6 +280,7 @@
     <Content Include="Content\images\icon-arrow.png" />
     <Content Include="Content\images\icon-clock.png" />
     <Content Include="Content\images\icon-cup.png" />
+    <Content Include="Content\images\icon-down-g.png" />
     <Content Include="Content\images\icon-home.png" />
     <Content Include="Content\images\icon-left.png" />
     <Content Include="Content\images\icon-lock.png" />
@@ -299,6 +304,7 @@
     <Content Include="Content\images\intimate\pay.png" />
     <Content Include="Content\images\intimate\pen.png" />
     <Content Include="Content\images\intimate\pic.png" />
+    <Content Include="Content\images\iphone.png" />
     <Content Include="Content\images\kangaroo-video.png" />
     <Content Include="Content\images\landing-arrow.png" />
     <Content Include="Content\images\landingpage\ban-ve-may-bay.jpg" />
@@ -450,6 +456,7 @@
     <Content Include="Content\images\lanling\report-w.png" />
     <Content Include="Content\images\lanling\report.jpg" />
     <Content Include="Content\images\lanling\security.png" />
+    <Content Include="Content\images\laptop.png" />
     <Content Include="Content\images\line.png" />
     <Content Include="Content\images\loading.gif" />
     <Content Include="Content\images\logo_Dantri_Mau.png" />
@@ -466,6 +473,7 @@
     <Content Include="Content\images\mpage\divider.png" />
     <Content Include="Content\images\mpage\mpage-header.png" />
     <Content Include="Content\images\mpage\new_logo.png" />
+    <Content Include="Content\images\new-search.png" />
     <Content Include="Content\images\newindex\arrow-blue.png" />
     <Content Include="Content\images\newindex\arrow-down-1.png" />
     <Content Include="Content\images\newindex\arrow-down-2.png" />
@@ -801,7 +809,6 @@
     <Content Include="Content\images\favicon.ico%40v1" />
     <Content Include="Content\images\newindex\bw-feedback-bg.png%40v=5" />
     <Content Include="Content\images\affiliate\promote-img.png%40v=100" />
-    <Content Include="Content\images\landingpage\Descr.WD3" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

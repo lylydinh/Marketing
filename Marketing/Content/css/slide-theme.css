@@ -4,16 +4,16 @@
 .slide-theme .image-col{
     position : relative;
 }
-.slide-theme .image-col .laptop{
-    background : url('/Themes/Portal/Default/Images/laptop.png');
-    background-repeat : no-repeat;
-    background-size : 622px 373px;
-    background-position : top center;
-    position : relative;
-    width : 622px;
-    height : 373px;
-    margin-bottom : 20px;
-}
+    .slide-theme .image-col .laptop {
+        background: url('../images/laptop.png'); 
+        background-repeat: no-repeat;
+        background-size: 622px 373px;
+        background-position: top center;
+        position: relative;
+        width: 622px;
+        height: 373px;
+        margin-bottom: 20px;
+    }
 @media (min-width : 1200px){
     .slide-theme .image-col .laptop{
         float : right;
@@ -31,7 +31,7 @@
     top : 20px;
 }
 .slide-theme .image-col .iphone{
-    background : url('/Themes/Portal/Default/Images/iphone.png');
+    background : url('../Images/iphone.png');
     background-repeat : no-repeat;
     background-size : 128px 258px;
     background-position : top center;
@@ -130,7 +130,7 @@
 
 .slide-theme .swiper-button-prev{
     background-image : unset;
-    background : url('/Themes/Portal/Default/Images/arrow-prev.png');
+    background : url('../Images/arrow-prev.png');
     background-repeat : no-repeat;
     background-size : 31px 65px;
     width : 31px;
@@ -138,7 +138,7 @@
 }
 .slide-theme .swiper-button-next{
     background-image : unset;
-    background : url('/Themes/Portal/Default/Images/arrow-next.png');
+    background : url('../Images/arrow-next.png');
     background-repeat : no-repeat;
     background-size : 31px 65px;
     width : 31px;
